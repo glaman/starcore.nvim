@@ -1,1 +1,1 @@
-require("starcore")
+require("starcore.colors").load()
