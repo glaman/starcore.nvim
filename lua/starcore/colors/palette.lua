@@ -9,7 +9,6 @@ palette.dark = {
   comment    = "#808080",
   selection  = "#303040",
   cursorline = "#1e1e2a",
-  function   = "#ffffff",
 
   cyan       = "#00d0d0",
   teal       = "#80c0c0",
@@ -17,6 +16,8 @@ palette.dark = {
   yellow     = "#ffd700",
   orange     = "#ff8800",
   red        = "#ff5050",
+  white      = "#ffffff",
+  black      = "#000000", 
 }
 
 return palette
