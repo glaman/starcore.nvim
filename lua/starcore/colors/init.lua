@@ -28,6 +28,8 @@ M.load = function()
   hl(0, "Special",      { fg = palette.yellow })
   hl(0, "Error",        { fg = palette.red, bold = true })
   hl(0, "WarningMsg",   { fg = palette.yellow })
+  hl(0, "Keyword", {fg=palette.orange})
+
 
   -- UI
   hl(0, "Pmenu",        { fg = palette.fg, bg = palette.bg_float })
@@ -43,15 +45,18 @@ M.load = function()
 
   -- Tree-sitter (modern syntax)
   hl(0, "@variable",          { fg = palette.fg })
-  hl(0, "@function",          { fg = palette.orange })
+  hl(0, "@function",          { fg = palette.orange, bold=true, italic=true, })
   hl(0, "@string",            { fg = palette.cyan })
   hl(0, "@constant",          { fg = palette.teal })
-  hl(0, "@keyword",           { fg = palette.fg })
+  hl(0, "@keyword",           { fg = palette.orange })
   hl(0, "@punctuation",       { fg = palette.fg_dim })
   hl(0, "@operator",          { fg = palette.orange })
   hl(0, "@type",              { fg = palette.fg })
   hl(0, "@comment",           { link = "Comment" })
   hl(0, "@error",             { fg = palette.red })
+  hl(0, "@keyword.function", {fg=palette.orange, bold=true})
+  hl(0, "@function.call", {fg = palette.orange})
+  hl(0, "@function.builtin", {fg=palette.orange, italic=true})
 
   -- LSP
   hl(0, "DiagnosticError", { fg = palette.red })
