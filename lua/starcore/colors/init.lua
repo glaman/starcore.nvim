@@ -28,7 +28,7 @@ M.load = function()
   hl(0, "Special",      { fg = palette.yellow })
   hl(0, "Error",        { fg = palette.red, bold = true })
   hl(0, "WarningMsg",   { fg = palette.yellow })
-  hl(0, "Keyword", {fg=palette.orange})
+  hl(0, "Keyword", {fg=palette.orange, bolt = true})
 
 
   -- UI
